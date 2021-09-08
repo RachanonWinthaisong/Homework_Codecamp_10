@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flight</title>
+</head>
+<style>
+    .booking {
+        border: 1px solid black;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
+        background-color: rgb(245, 248, 248);
+    }
+
+    .flyform {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .to {
+        display: inline-block;
+        margin-left: 78px;
+    }
+
+    .departing {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .returning {
+        display: inline-block;
+        margin-left: 40px;
+    }
+
+    .numadult {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .numchild {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .numinfant {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .currency {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    legend{
+        text-align: center;
+        font-size: 20px;
+    }
+     .searchbutton{
+         margin: 10px 20px;
+         padding: 4px 9px;
+         font-weight: bold;
+         color: white;
+         background-color: rgb(168, 164, 164);
+     }
+     .searchbutton:hover{
+         background-color: rgb(151, 151, 148);
+     }
+</style>
+
+<body>
+    <div class="booking">
+        <form action="#">
+            <legend>Book Flight</legend>
+            <div class="flyform">
+                <label for="formprovince">Flying form</label><br>
+                <select name="formprovince" id="formprovince">
+                    <option value="bangkok">Bangkok</option>
+                    <option value="Chiang Mai">Chiang Mai</option>
+                    <option value="Khon Kaen">Khon Kaen</option>
+                    <option value="Chonburi">Chonburi</option>
+                    <option value="Kanchanaburi">Kanchanaburi</option>
+                </select>
+            </div>
+
+            <div class="to">
+                <label for="toprovince">To</label><br>
+                <select name="toprovince" id="toprovince">
+                    <option value="Chiang Mai">Chiang Mai</option>
+                    <option value="Khon Kaen">Khon Kaen</option>
+                    <option value="Chonburi">Chonburi</option>
+                    <option value="Kanchanaburi">Kanchanaburi</option>
+                    <option value="bangkok">Bangkok</option>
+                </select>
+            </div>
+
+            <div class="departing">
+                <label for="departing">Departing</label><br>
+                <input type="date" id="departing" name="departing">
+            </div>
+
+            <div class="returning">
+                <label for="returning">Returning</label><br>
+                <input type="date" id="returning" name="returning">
+            </div>
+
+            <div class="numadult">
+                <label for="numadult">Adult</label> <br>
+                <input type="number" id="numadult" name="numadult" min="1" max="10" value="1">
+            </div>
+
+            <div class="numchild">
+                <label for="numchild">Child</label> <br>
+                <input type="number" id="numchild" name="numchild" min="0" max="10" value="0">
+            </div>
+
+            <div class="numinfant">
+                <label for="numinfant">Infant</label> <br>
+                <input type="number" id="numinfant" name="numinfant" min="0" max="10" value="0">
+            </div>
+
+            <div class="currency">
+                <select id="currency" name="currency" value="THB">
+                    <option value:="THB">THB</option>
+                    <option value:="USD">USD</option>
+                    <option value:="GBP">GBP</option>
+                    <option value:="EUR">EUR</option>
+                    <option value:="CNY">CNY</option>
+                    <option value:="JPY">JPY</option>
+                    <option value:="SGD">SGD</option>
+                    <option value:="HKD">HKD</option>
+                </select>
+            </div>
+            <button class="searchbutton">SEARCH</button>
+        </form>
+    </div>
+</body>
+
+</html>
