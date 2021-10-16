@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 3</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            background-color: #edf0f5;;
+        }
+        .header{
+            height: 5vh;
+  
+        }
+        .main {
+            height: 80vh;
+            display: flex;
+        }
+        .left{
+            width: 10vw;
+  
+        }
+        .center{
+            width: 80vw;
+     
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .content{
+           flex-basis: 350px;
+
+        }
+        .logo{
+            width: 200px;
+   
+        }
+        .formregis{
+            display: flex;
+            width: 400px;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+
+        }
+        form{
+            text-align: center;
+            padding: 15px;
+   
+        }
+
+        input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #3c74c2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0e58b8;
+}
+
+
+        .right{
+            width: 10vw;
+       
+        }
+        .footer {
+            display: flex;
+            height: 15vh;
+            background-color: #fff;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <div class="left"></div>
+        <div class="center">
+            <div class="content">
+            <img class="logo" src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="Facebook">
+            <h2 style="font-size: 20px;">Facebook ช่วยคุณเชื่อมต่อและแชร์กับผู้คนมากมายรอบตัวคุณ</h2>
+        </div>
+        <div class="formregis">
+            <form action="/action_page.php">
+                <input type="text" id="fname" name="firstname" placeholder="อีเมลหรือหมายเลขโทรศัพท์มือถือ">
+            
+                <input type="text" id="lname" name="lastname" placeholder="รหัสผ่าน">
+              
+                <input type="submit" value="เข้าสู่ระบบ">
+                <a href="#">ลืมรหัสผ่านใช่หรือไม่</a>
+                
+              </form>
+            </div>
+        </div>
+        <div class="right"></div>
+        </div>
+
+    <div class="footer"><p style="text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ipsum consequuntur voluptas? Porro corrupti nemo quos pariatur beatae nulla repellendus, excepturi laudantium. !</p></div>
+</body>
+</html>
